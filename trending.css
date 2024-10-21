@@ -1,0 +1,157 @@
+/* Importing Roboto font */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+/* Sidebar - Fit size and not too long */
+.sidebar {
+    width: 200px;
+    background-color: #283593;
+    padding: 10px;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow-y: auto;
+}
+
+.sidebar .toggle-btn {
+    background: none;
+    color: white;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Sidebar Menu */
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 20px;
+}
+
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    display: block;
+    transition: background 0.3s ease;
+}
+
+.sidebar ul li a:hover,
+.sidebar ul li a.active {
+    background-color: #3949ab;
+    border-radius: 5px;
+}
+
+/* News Section */
+.news-section {
+    margin-left: 220px;
+    padding: 20px;
+}
+
+.news-section h1 {
+    font-size: 24px;
+    color: #283593;
+    margin-bottom: 20px;
+}
+
+#news-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.news-item {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.news-item h3 {
+    color: #283593;
+}
+
+.news-item p {
+    color: #666;
+}
+
+.news-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* Trending Info Section */
+.trending-info {
+    display: flex;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    margin-left: 220px;
+    padding: 20px;
+}
+
+
+
+.info-box, .side-info {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.info-box img, .side-info img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* Video Section */
+.video-section {
+    margin-left: 220px;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+.video-section h2 {
+    font-size: 24px;
+    color: #283593;
+}
+
+.video-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.video {
+    width: 30%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.video video {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.video p {
+    font-size: 16px;
+    color: #666;
+    margin-top: 10px;
+}

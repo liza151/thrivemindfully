@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harmony - Mental Wellness Portal</title>
+    <link rel="stylesheet" href="home.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Sidebar Navigation -->
+<nav class="sidebar" id="sidebar">
+    <button id="toggle-nav" class="toggle-btn">
+        <i class="fas fa-bars"></i>
+    </button>
+    <ul>
+        <li><a href="home.html" class="active">Home</a></li>
+        <li><a href="problems.html">Problems</a></li>
+        <li><a href="solutions.html">Solutions</a></li>
+        <li><a href="treatments.html">Treatments</a></li>
+        <li><a href="trending.html">Trending</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+    </ul>
+</nav>
+
+<!-- Main Content Area -->
+<div class="main-content">
+    <header>
+        <div class="search-bar">
+            <input type="text" placeholder="Search..." id="search-input">
+            <button id="search-btn"><i class="fas fa-search"></i></button>
+        </div>
+        <div class="calendar-widget">
+            <div class="calendar-header">
+                <button id="prev-month"><i class="fas fa-chevron-left"></i></button>
+                <h3 id="calendar-title"></h3>
+                <button id="next-month"><i class="fas fa-chevron-right"></i></button>
+            </div>
+            <div id="calendar-container"></div> <!-- Calendar will load here -->
+        </div>
+    </header>
+
+    <section class="content-section">
+        <!-- Logo Section (For Random Mental Health Image) -->
+        <div class="logo-section">
+            <h1>Harmony</h1>
+            <div id="random-image"></div>
+        </div>
+        
+        <!-- Media Updates Section (For YouTube Videos) -->
+        <div class="media-updates">
+            <h2>Media Updates</h2>
+            <div id="video-container"></div>
+        </div>
+  
+
+        <div class="problems-section">
+            <h2>Problems</h2>
+            <div class="problem-cards">
+                <div class="card" onclick="openModal('problems-modal')">Anxiety Disorders</div>
+                <div class="card" onclick="openModal('problems-modal')">Depression</div>
+                <div class="card" onclick="openModal('problems-modal')">Substance Abuse</div>
+            </div>
+            <button class="more-btn" onclick="openModal('problems-modal')">Show More</button>
+        </div>
+    </section>
+</div>
+
+<!-- Right Side Sections -->
+<div class="right-section">
+    <section class="solutions-section">
+        <h2>Solutions</h2>
+        <div class="solution-cards">
+            <div class="solution" onclick="openModal('solutions-modal')">Cognitive Behavioral Therapy (CBT)</div>
+            <div class="solution" onclick="openModal('solutions-modal')">Mindfulness Meditation</div>
+            <div class="solution" onclick="openModal('solutions-modal')">Support Groups</div>
+        </div>
+        <button class="more-btn" onclick="openModal('solutions-modal')">Show More</button>
+    </section>
+
+    <section class="treatments-section">
+        <h2>Treatments</h2>
+        <div class="treatment-circles">
+            <div class="circle" onclick="openModal('treatments-modal')">Medication Therapy</div>
+            <div class="circle" onclick="openModal('treatments-modal')">Psychotherapy</div>
+            <div class="circle" onclick="openModal('treatments-modal')">Holistic Approaches</div>
+            <div class="circle" onclick="openModal('treatments-modal')">Cognitive Therapy</div>
+            <div class="circle" onclick="openModal('treatments-modal')">Exercise and Diet</div>
+            <div class="circle" onclick="openModal('treatments-modal')">Stress Management</div>
+        </div>
+    </section>
+</div>
+
+<!-- Modal for Problems -->
+<div id="problems-modal" class="modal">
+    <div class="modal-content">
+        <span class="close" id="close-problems">&times;</span>
+        <h2>Problems</h2>
+        <ul id="problems-list">
+            <li>Anxiety Disorders</li>
+            <li>Depression</li>
+            <li>Substance Abuse</li>
+            <li>PTSD</li>
+            <li>Obsessive-Compulsive Disorder (OCD)</li>
+            <li>Eating Disorders</li>
+            <li>Personality Disorders</li>
+            <li>Bipolar Disorder</li>
+            <li>Phobias</li>
+            <li>Social Anxiety Disorder</li>
+        </ul>
+    </div>
+</div>
+
+<!-- Modal for Solutions -->
+<div id="solutions-modal" class="modal">
+    <div class="modal-content">
+        <span class="close" id="close-solutions">&times;</span>
+        <h2>Solutions</h2>
+        <ul id="solutions-list">
+            <li>Cognitive Behavioral Therapy (CBT)</li>
+            <li>Mindfulness Meditation</li>
+            <li>Support Groups</li>
+            <li>Art Therapy</li>
+            <li>Journaling</li>
+            <li>Music Therapy</li>
+            <li>Exercise Programs</li>
+            <li>Community Engagement</li>
+            <li>Family Therapy</li>
+            <li>Motivational Interviewing</li>
+        </ul>
+    </div>
+</div>
+
+<!-- Modal for Treatments -->
+<div id="treatments-modal" class="modal">
+    <div class="modal-content">
+        <span class="close" id="close-treatments">&times;</span>
+        <h2>Treatments</h2>
+        <ul id="treatments-list">
+            <li>Medication Therapy</li>
+            <li>Psychotherapy</li>
+            <li>Holistic Approaches</li>
+            <li>Cognitive Therapy</li>
+            <li>Exercise and Diet</li>
+            <li>Stress Management</li>
+            <li>Mindfulness Training</li>
+            <li>Behavioral Therapy</li>
+            <li>Group Therapy</li>
+            <li>Family Counseling</li>
+        </ul>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

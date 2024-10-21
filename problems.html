@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harmony - Problems</title>
+    <link rel="stylesheet" href="problems.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Sidebar Navigation -->
+<nav class="sidebar" id="sidebar">
+    <button id="toggle-nav" class="toggle-btn">
+        <i class="fas fa-bars"></i>
+    </button>
+    <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="problems.html" class="active">Problems</a></li>
+        <li><a href="solutions.html">Solutions</a></li>
+        <li><a href="treatments.html">Treatments</a></li>
+        <li><a href="trending.html">Trending</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+    </ul>
+</nav>
+
+<!-- Main Content Area -->
+<div class="main-content">
+    <header>
+        <div class="search-bar">
+            <input type="text" placeholder="Search problems..." />
+            <button><i class="fas fa-search"></i></button>
+        </div>
+    </header>
+
+    <section class="problems-section">
+        <div class="problem-cards">
+            <div class="card">
+                <img src="images/anxiety.jpg" alt="Anxiety" />
+                <h3>Anxiety</h3>
+                <p>An overwhelming sense of worry or fear.</p>
+            </div>
+            <div class="card">
+                <img src="images/depression.jpg" alt="Depression" />
+                <h3>Depression</h3>
+                <p>A mood disorder causing persistent feelings of sadness.</p>
+            </div>
+            <div class="card">
+                <img src="images/bipolar disorder.jpg" alt="Bipolar Disorder" />
+                <h3>Bipolar Disorder</h3>
+                <p>Characterized by mood swings ranging from depressive lows to manic highs.</p>
+            </div>
+            <div class="card">
+                <img src="images/ptsd.jpg" alt="PTSD" />
+                <h3>Post-Traumatic Stress Disorder (PTSD)</h3>
+                <p>A condition triggered by experiencing or witnessing a traumatic event.</p>
+            </div>
+            <div class="card">
+                <img src="images/ocd.png" alt="OCD" />
+                <h3>Obsessive-Compulsive Disorder (OCD)</h3>
+                <p>Characterized by repetitive thoughts and behaviors.</p>
+            </div>
+            <div class="card">
+                <img src="images/adhd.jpg" alt="ADHD" />
+                <h3>Attention-Deficit/Hyperactivity Disorder (ADHD)</h3>
+                <p>Affects the ability to pay attention and control impulsive behaviors.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="alphabet-filter">
+        <h2>Find the condition or problem by its first letter:</h2>
+        <div class="alphabet">
+            <!-- Add more letters as necessary -->
+            <span>A</span><span>B</span><span>C</span><span>D</span><span>E</span>
+            <span>F</span><span>G</span><span>H</span><span>I</span><span>J</span>
+            <span>K</span><span>L</span><span>M</span><span>N</span><span>O</span>
+            <span>P</span><span>Q</span><span>R</span><span>S</span><span>T</span>
+            <span>U</span><span>V</span><span>W</span><span>X</span><span>Y</span><span>Z</span>
+        </div>
+
+        <!-- Alphabet-based filtering results -->
+        <div class="letter-result" id="resultA">
+            <h3>A</h3>
+            <p>Anxiety: An overwhelming sense of worry or fear.</p>
+            <p>ADHD: Affects the ability to pay attention and control impulsive behaviors.</p>
+        </div>
+        <div class="letter-result" id="resultB">
+            <h3>B</h3>
+            <p>Bipolar Disorder: Characterized by mood swings ranging from depressive lows to manic highs.</p>
+        </div>
+        <div class="letter-result" id="resultD">
+            <h3>D</h3>
+            <p>Depression: A mood disorder causing persistent feelings of sadness.</p>
+        </div>
+        <div class="letter-result" id="resultP">
+            <h3>P</h3>
+            <p>Post-Traumatic Stress Disorder (PTSD): A condition triggered by experiencing or witnessing a traumatic event.</p>
+        </div>
+        <div class="letter-result" id="resultO">
+            <h3>O</h3>
+            <p>Obsessive-Compulsive Disorder (OCD): Characterized by repetitive thoughts and behaviors.</p>
+        </div>
+    </section>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
